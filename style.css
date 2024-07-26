@@ -1,0 +1,42 @@
+.logo{
+    color: #009970;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.login{
+    background-color: #009970;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav-link{
+    font-weight: 600;
+    position: relative;
+}
+.nav-link:hover {
+    color: black;
+}
+@media (min-width: 768px) {
+    .nav-link::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        transform: translateX(-50%);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::after {
+        width: 100%;
+        visibility: visible;
+    }
+}
